@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="./assets/krethick.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!--Press Alt+shift+arrow down to duplicate-->
+    <!--Link style.css and mediaqueries.css-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body> 
+  <label class="toggle-switch">
+    <input type="checkbox" id="dark-mode-toggle" onchange="toggleDarkMode()">
+    <span class="slider">
+      <span class="sun-icon">☀️</span>
+      <span class="moon-icon">🌙</span>
+    </span>
+  </label>
+  
+
+   <nav id="desktop-nav"> <!--nav is used for navigation-->
+       <div class="logo">Welcome to my Portfolio</div>
+       <div>
+         <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Proficiency</a></li>
+            <li><a href="#projects">Projects</a></li>
+            
+            
+            <!--<li><a href="#Contact">Contact Me</a></li>-->
+         </ul>
+       </div>
+      </nav>
+     
+      <!--This part is used for mobile navigation-->
+      <nav id="hamburger-nav">
+        <div class="logo">Portfolio</div>
+        <div class="hamburger-menu">
+         <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          
+          <!--<li><a href="#Contact" onclick="toggleMenu()">Contact Me</a></li>-->
+        </div>
+      </div>
+      </nav>
+
+      <!--We will be creating a section-->
+      <section id="profile">
+         
+         <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Ahmet E. Dağ</h1>
+          <p class="section__text__p2">Game Developer</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2"
+   onclick="window.open('./assets/Resume/AhmetEDag.docx')">
+   Download Resume
+</button>
+            <button
+              class="btn btn-color-1"
+              onclick="location.href='./#contact'"
+            >Contact Info
+          </button>
+          </div>
+
+          <div id="social-container">
+            <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/adag21044/'" />
+            <img src="./assets/github.png" alt="GitHub" class="icon" onclick="location.href='https://github.com/adag21044'" />
+            <img src="./assets/medium_r.webp" alt="Medium" class="icon" onclick="location.href='https://medium.com/@adag21044'" />
+          </div>
+          
+
+          </div>
+         </div>
+      </section>
+      <!--Start with an about section-->
+      <section id="about">
+      <p class="section__text__p1">Get to Know More</p>
+      <h1 class="title">About Me</h1>
+      
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" 
+            alt="experience icon"
+            class="icon"
+            />
+             <h3>Experience</h3>
+             <!--<img src="./assets/byjus.png" alt="Byjus Logo" width="50" height="50">-->
+            <p>Ideon</p>
+            <p> Software Engineer (Internship)</p>
+            <p> July 2024 - August 2024</p>
+           <br>
+           
+        </div>
+        <div class="details-container">
+          <img src="./assets/education.png" 
+          alt="Education icon"
+          class="icon"
+          />
+          <h3>Education</h3>
+          <p>Istanbul Medeniyet University</p>
+          <p>Computer Engineering</p>
+          <p>2021 - 2026</p>
+        </div>
+        </div>
+        <div class="text-container">
+         <p>
+          <!--An Inquisitive computer science student and a dedicated team player who 
+          is keen on learning more and finding his place in the gaming industry,and
+          in the process playing a part in helping the company achieve its goals.!-->
+         </p>
+        </div>
+      </div>
+      </div>
+      <img src="./assets/arrow.png" 
+      alt="Arrow icon" 
+      class="icon arrow" 
+      onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+       <p class="section__text__p1">Explore My</p>
+       <h1 class="title">Technical Skills</h1>
+       <div class="experience-details-container">
+         <div class="about-containers">
+           <div class="details-container">
+              <h2 class="experience-sub-title">Game Development</h2>
+              <div class="article-container">
+                <article>
+                  <img src="./assets//checkmark.png" 
+                  alt="Experience icon"
+                  class="icon"
+                  />
+                  <div>
+                    <h4>UNITY ENGINE</h4>
+                    <div class="progress-bar-container">
+                      <div class="progress-bar" style="width: 80%;"></div>
+                  </div>
+                    </div>
+                </article>
+
+                
+
+                <article>
+                  <img src="./assets//checkmark.png" 
+                  alt="Experience icon"
+                  class="icon"
+                  />
+                  <div>
+                    <h4 class="text-container22">C# Programming</h4>
+                     <div class="progress-bar-container">
+                      <div class="progress-bar" style="width: 80%;"></div>
+                  </div>
+                </div>
+                </article>
+
+                
+                
+              </div>
+         </div>
+           <div class="details-container">
+              <h2 class="experience-sub-title">Mobile Development</h2>
+              <div class="article-container">
+                <article>
+                  <img src="./assets/checkmark.png" 
+                  alt="Experience icon"
+                  class="icon"
+                  />
+                  <div>
+                    <h4 class="text-container17">FLUTTER</h4>
+                    <div class="progress-bar-container">
+                      <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                  </div>
+                </article>
+                
+              
+                  
+                
+              </div>
+         </div>
+           <div class="details-container">
+              <h2 class="experience-sub-title">Other Programming Languages </h2>
+              <div class="article-container">
+                <article>
+                  <img src="./assets/checkmark.png" 
+                  alt="Experience icon"
+                  class="icon"
+                  />
+                  <div>
+                    <h4 class="text-container16">C</h4>
+                    <div class="progress-bar-container">
+                      <div class="progress-bar" style="width: 88%;"></div>
+                    </div>
+                  </div>
+                </article>
+                
+                <article>
+                  <img src="./assets/checkmark.png" 
+                  alt="Experience icon"
+                  class="icon"
+                  />
+                  <div>
+                    <h4 class="text-container26">Java</h4>
+                    <div class="progress-bar-container">
+                      <div class="progress-bar" style="width: 83%;"></div>
+                  </div>
+                </div>
+                </article>
+                
+                
+              </div>
+           </div>
+         </div>
+       </div>
+       <img src="./assets/arrow.png" 
+       alt="Arrow icon" 
+       class="icon arrow" 
+       onclick="location.href='./#projects'"
+       />
+      </section>
+      <section id="projects">
+      <P class="section__text__p1">Browse My</P>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <iframe width="350" height="315" src="https://www.youtube.com/embed/bszFYCdY4bQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <h2 class="experience-sub-title project-title"> Hyper Casual Arcade Idle System</h2>
+            <div class="text-container"> 
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/adag21044/Hyper-Casual-Arcade-Idle-System'">
+                  Github
+                </button>
+                
+              </div>
+              <br>
+              <ul class="snake-content">
+                <li>Player movement: The player moves towards the mouse click position and smoothly faces the direction of movement.</li>
+                <li>Paper Collection: The player collects papers from tables and stacks them with a smooth animation.</li>
+                <li>Paper Placement: Papers can be placed on work desks, where they are processed to generate money.</li>
+                <li>Work Desk Processing: The work desk processes papers and animates while generating money.</li>
+                <li>Printer Functionality: A printer continuously prints papers that the player can collect.</li>
+                <br>
+                <strong>Role:</strong> Programmer (Individual Project)
+                <br>
+                <strong>Tools:</strong> Unity, SOLID Principles, Game Design Patterns
+            </ul>
+          </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+           <iframe width="350" height="315" src="https://youtube.com/embed/tgFHDhDP7Ng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <h2 class="experience-sub-title project-title">Top Down Shooter Rogue-Like Game System</h2>
+            <div class="text-container">
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/adag21044/Unity-Top-Down-Shooter-Roguelike'">
+                  Github
+                </button>
+                
+              </div>
+              <br>
+            <ul class="snake-content">
+              <li>CameraFollow: Adjusts the camera position to follow the player, maintaining a set distance</li> 
+              <li>CollectibleSpawner: Spawns a collectible item when the object is destroyed.</li>
+              <li>EnemyMove: Moves the enemy towards the player, facing them as they move.</li>
+              <li>MuzzleController: Controls projectile movement, destroying itself and any hit enemies on contact.</li>
+              <li>Notifier: Manages notifications by sending events to registered observers.</li>
+              <li>ObjectPool: Pools objects to improve performance, reusing inactive ones instead of creating new instances.</li>
+              <br>
+              <strong>Role:</strong> Programmer (Individual Project)
+                <br>
+                <strong>Tools:</strong> Unity, SOLID Principles, Game Design Patterns
+        </ul>
+         </div>
+      </div>
+       <div class="details-container color-container">
+          <div class="article-container">
+            <iframe width="350" height="315" src="https://youtube.com/embed/jn5XaUXKumY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <h2 class="experience-sub-title project-title">Cube Surfers </h2>
+          <div class="text-container"> 
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/adag21044/Unity-Cube-Surfers'">
+              Github
+            </button>
+            
+          </div>
+          <br>
+          <ul class="snake-content">
+            <li>CameraFollow: Smoothly follows the hero with a set offset using linear interpolation.</li>
+            <li>CubeController: Uses raycasting to detect obstacles, adding/removing cubes from the hero's stack as needed.</li>
+            <li>HeroInputController: Reads horizontal input from the mouse to control hero movement.</li>
+            <li>HeroMovementController: Moves the hero forward and adjusts horizontal position based on player input within set boundaries.</li>
+            <li>HeroStackController: Manages the hero’s cube stack, adding/removing cubes and updating positions.</li>
+            <br>
+            <strong>Role:</strong> Programmer (Individual Project)
+            <br>
+            <strong>Tools:</strong> Unity, SOLID Principles, Game Design Patterns
+        </ul>
+        </div>
+      </div>
+    </div>
+      </div>
+      
+      <!--<img src="./assets/arrow.png" 
+      alt="Arrow icon" 
+      class="icon arrow" 
+      onclick="location.href='./#projects'"
+      />-->
+    </section>
+    <section id="projects1">
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <iframe width="350" height="315" src="https://www.youtube.com/embed/iYBXeHw7XIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <h2 class="experience-sub-title project-title">Maze Tilt Master</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/adag21044/Maze-Tilt-Master'">
+                Github
+              </button>
+            </div>
+            <div class="text-container">
+            </br> 
+            <ul class="snake-content">
+              <li>Engage in a labyrinth puzzle where you guide the ball to the goal using device tilt controls.</li>
+              <li>Physics-based gameplay with realistic motion for an immersive experience.</li>
+              <li>Multiple challenging levels, increasing in difficulty with unique layouts.</li>
+              <li>Background music plays in a loop for a relaxing gaming atmosphere.</li>
+              <br>
+              <strong>Role:</strong> Programmer (Individual Project)
+              <br>
+              <strong>Tools:</strong> Unity, SOLID Principles, Game Design Patterns
+          </ul>
+          </div>
+          </div>
+      <div class="details-container color-container">
+          <div class="article-container1">
+            <iframe width="350" height="315" src="https://www.youtube.com/embed/?" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <h2 class="experience-sub-title project-title1">Additional game projects will be added soon.</h2>
+          <div class="text-container"> 
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn1" onclick="location.href='https://github.com/krethick/Flappy-Bird'">
+                Github
+              </button>   
+            </div>
+          <ul class="snake-content">
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <br>
+            <strong>Role:</strong> Programmer (Individual Project)
+            <br>
+            <strong>Tools:</strong> Unity, SOLID Principles, Game Design Patterns
+           
+        </ul>
+         </div>
+      </div>
+      
+       <div class="details-container color-container">
+          <div class="article-container">
+            <iframe width="350" height="315" src="https://www.youtube.com/embed/?" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <h2 class="experience-sub-title project-title">Additional game projects will be added soon.</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/krethick/Snake_game'">
+              Github
+            </button>
+            
+          </div>
+          <br>
+          <ul class="snake-content">
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <br>
+            <strong>Role:</strong> Programmer (Individual Project)
+            <br>
+            <strong>Tools:</strong> Unity, SOLID Principles, Game Design Patterns
+        </ul>
+        </div>
+      </div>
+    </div>
+      </div>
+      <img src="./assets/arrow.png" 
+      alt="Arrow icon" 
+      class="icon arrow" 
+      onclick="location.href='./#contact'"
+      />
+      </section>
+    
+        
+          </div>
+          
+           <img src="./assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='#contact'" 
+        />
+        </section>
+        <section id="contact">
+             <p class="section__text__p1">Get in Touch</p>
+             <h1 class="title">Contact Me</h1>
+             <div class="contact-info-upper-container">
+              <div class="contact-info-container">
+               <img src="./assets/email.png" alt="Email icon" class="icon contact-icon"/>
+               <p><a href="mailto:krethick@gmail.com">ahmetedag9@gmail.com</a></p>
+               
+             </div>
+             
+              <div class="contact-info-container">
+               <img src="./assets/linkedin.png" alt="Linkedln icon" class="icon contact-icon"/>
+               <p><a href="https://www.linkedin.com/in/adag21044/">Linkedln</a></p>
+
+             </div>
+             </div>
+        </section>
+         <footer>
+           
+         </footer>
+  <script src="script.js"></script> <!--Link script.js-->
+</body>
+</html>
