@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <link rel="shortcut icon" type="x-icon" href="./assets/ologo.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <!--Press Alt+shift+arrow down to duplicate-->
-    <!--Link style.css and mediaqueries.css-->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="x-icon" href="./assets/ologo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <!--Press Alt+shift+arrow down to duplicate-->
+  <!--Link style.css and mediaqueries.css-->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
 </head>
-<body> 
+
+<body>
   <label class="toggle-switch">
     <input type="checkbox" id="dark-mode-toggle" onchange="toggleDarkMode()">
     <span class="slider">
@@ -18,319 +20,366 @@
       <span class="moon-icon">🌙</span>
     </span>
   </label>
-  
 
-   <nav id="desktop-nav"> <!--nav is used for navigation-->
-       <div class="logo">Welcome to my Portfolio</div>
-       <div>
-         <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Proficiency</a></li>
-            <li><a href="#projects">Projects</a></li>
-            
-            
-            <!--<li><a href="#Contact">Contact Me</a></li>-->
-         </ul>
-       </div>
-      </nav>
-     
-      <!--This part is used for mobile navigation-->
-      <nav id="hamburger-nav">
-        <div class="logo">Portfolio</div>
-        <div class="hamburger-menu">
-         <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          
-          <!--<li><a href="#Contact" onclick="toggleMenu()">Contact Me</a></li>-->
-        </div>
+
+  <nav id="desktop-nav"> <!--nav is used for navigation-->
+    <div class="logo">Welcome to my Portfolio</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Proficiency</a></li>
+        <li><a href="#projects">Projects</a></li>
+
+
+        <!--<li><a href="#Contact">Contact Me</a></li>-->
+      </ul>
+    </div>
+  </nav>
+
+  <!--This part is used for mobile navigation-->
+  <nav id="hamburger-nav">
+    <div class="logo">Portfolio</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-      </nav>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
 
-      <!--We will be creating a section-->
-      <section id="profile">
-         
-         <div class="section__text">
-          <p class="section__text__p1">Hello, I'm</p>
-          <h1 class="title">Osman Şişman</h1>
-          <p class="section__text__p2">Game Developer</p>
-          <div class="btn-container">
-            <button class="btn btn-color-2"
-   onclick="window.open('./assets/Resume/osmansismancv.pdf')">
-   Download Resume
-</button>
-            <button
-              class="btn btn-color-1"
-              onclick="location.href='./#contact'"
-            >Contact Info
-          </button>
-          </div>
+        <!--<li><a href="#Contact" onclick="toggleMenu()">Contact Me</a></li>-->
+      </div>
+    </div>
+  </nav>
 
-          <div id="social-container">
-            <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/osman-sisman/'" />
-            <img src="./assets/github.png" alt="GitHub" class="icon" onclick="location.href='https://github.com/duzz41'" />
-          </div>
-          
+  <!--We will be creating a section-->
+  <section id="profile">
 
-          </div>
-         </div>
-      </section>
-      <!--Start with an about section-->
-      <section id="about">
-      <p class="section__text__p1">Get to Know More</p>
-      <h1 class="title">About Me</h1>
-      
-      <div class="about-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <img src="./assets/experience.png" 
-            alt="experience icon"
-            class="icon"
-            />
-             <h3>Experience</h3>
-             <!--<img src="./assets/byjus.png" alt="Byjus Logo" width="50" height="50">-->
-            <p>Assistant Student</p>
-            <p> Game Development || DOT2012</p>
-            <p> February 2025 - April 2025</p>
-           <br>
-           
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Osman Şişman</h1>
+      <p class="section__text__p2">Game Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/Resume/osmansismancv.pdf')">
+          Download Resume
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info
+        </button>
+      </div>
+
+      <div id="social-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/osman-sisman/'" />
+        <img src="./assets/github.png" alt="GitHub" class="icon" onclick="location.href='https://github.com/duzz41'" />
+      </div>
+
+
+    </div>
+    </div>
+  </section>
+  <!--Start with an about section-->
+  <section id="about">
+    <p class="section__text__p1">Get to Know More</p>
+    <h1 class="title">About Me</h1>
+
+    <div class="about-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <img src="./assets/experience.png" alt="experience icon" class="icon" />
+          <h3>Experience</h3>
+          <!--<img src="./assets/byjus.png" alt="Byjus Logo" width="50" height="50">-->
+          <p>Assistant Student</p>
+          <p> Game Development || DOT2012</p>
+          <p> February 2025 - April 2025</p>
+          <br>
+
         </div>
         <div class="details-container">
-          <img src="./assets/education.png" 
-          alt="Education icon"
-          class="icon"
-          />
+          <img src="./assets/education.png" alt="Education icon" class="icon" />
           <h3>Education</h3>
           <p>Mugla Sitki Kocman University</p>
           <p>Digital Game Design</p>
           <p>2021 - 2026</p>
         </div>
-        </div>
-        <div class="text-container">
-         <p>
+      </div>
+      <div class="text-container">
+        <p>
           <!--An Inquisitive computer science student and a dedicated team player who 
           is keen on learning more and finding his place in the gaming industry,and
           in the process playing a part in helping the company achieve its goals.!-->
-         </p>
+        </p>
+      </div>
+    </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Technical Skills</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Game Engines</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets//checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h4>Unity Engine</h4>
+                <div class="progress-bar-container">
+                  <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+              </div>
+            </article>
+
+
+
+            <article>
+              <img src="./assets//checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h4 class="text-container22">Unreal Engine</h4>
+                <div class="progress-bar-container">
+                  <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+              </div>
+            </article>
+
+
+
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">3D / 2D </h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h4 class="text-container17">Blender</h4>
+                <div class="progress-bar-container">
+                  <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+              </div>
+
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h4 class="text-container17">Photoshop</h4>
+                <div class="progress-bar-container">
+                  <div class="progress-bar" style="width: 70%;"></div>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Programming Languages </h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h4 class="text-container16">C++</h4>
+                <div class="progress-bar-container">
+                  <div class="progress-bar" style="width: 88%;"></div>
+                </div>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h4 class="text-container26">C#</h4>
+                <div class="progress-bar-container">
+                  <div class="progress-bar" style="width: 83%;"></div>
+                </div>
+              </div>
+            </article>
+
+
+          </div>
         </div>
       </div>
-      </div>
-      <img src="./assets/arrow.png" 
-      alt="Arrow icon" 
-      class="icon arrow" 
-      onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-       <p class="section__text__p1">Explore My</p>
-       <h1 class="title">Technical Skills</h1>
-       <div class="experience-details-container">
-         <div class="about-containers">
-           <div class="details-container">
-              <h2 class="experience-sub-title">Game Engines</h2>
-              <div class="article-container">
-                <article>
-                  <img src="./assets//checkmark.png" 
-                  alt="Experience icon"
-                  class="icon"
-                  />
-                  <div>
-                    <h4>Unity Engine</h4>
-                    <div class="progress-bar-container">
-                      <div class="progress-bar" style="width: 80%;"></div>
-                  </div>
-                    </div>
-                </article>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <P class="section__text__p1">Browse My</P>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <iframe width="350" height="315" src="https://www.youtube.com/embed/b3RAuWG57b8?si=HyPp1ysm_fAkFtiM"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+          <h2 class="experience-sub-title project-title">Whisper Woods</h2>
+          <div class="text-container">
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://khazad-games.itch.io/whisperwoods'">
+                Itch.io
+              </button>
 
-                
-
-                <article>
-                  <img src="./assets//checkmark.png" 
-                  alt="Experience icon"
-                  class="icon"
-                  />
-                  <div>
-                    <h4 class="text-container22">Unreal Engine</h4>
-                     <div class="progress-bar-container">
-                      <div class="progress-bar" style="width: 80%;"></div>
-                  </div>
-                </div>
-                </article>
-
-                
-                
-              </div>
-         </div>
-           <div class="details-container">
-              <h2 class="experience-sub-title">3D / 2D </h2>
-              <div class="article-container">
-                <article>
-                  <img src="./assets/checkmark.png" 
-                  alt="Experience icon"
-                  class="icon"
-                  />
-                  <div>
-                    <h4 class="text-container17">Blender</h4>
-                    <div class="progress-bar-container">
-                      <div class="progress-bar" style="width: 80%;"></div>
-                    </div>
-                  </div>
-                    
-                </article>
-                  <article>
-                      <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                      <div>
-                          <h4 class="text-container17">Photoshop</h4>
-                          <div class="progress-bar-container">
-                              <div class="progress-bar" style="width: 70%;"></div>
-                          </div>
-                      </div>
-                  </article>
-                  
-              </div>
-         </div>
-           <div class="details-container">
-              <h2 class="experience-sub-title">Programming Languages </h2>
-              <div class="article-container">
-                <article>
-                  <img src="./assets/checkmark.png" 
-                  alt="Experience icon"
-                  class="icon"
-                  />
-                  <div>
-                    <h4 class="text-container16">C++</h4>
-                    <div class="progress-bar-container">
-                      <div class="progress-bar" style="width: 88%;"></div>
-                    </div>
-                  </div>
-                </article>
-                
-                <article>
-                  <img src="./assets/checkmark.png" 
-                  alt="Experience icon"
-                  class="icon"
-                  />
-                  <div>
-                    <h4 class="text-container26">C#</h4>
-                    <div class="progress-bar-container">
-                      <div class="progress-bar" style="width: 83%;"></div>
-                  </div>
-                </div>
-                </article>
-                
-                
-              </div>
-           </div>
-         </div>
-       </div>
-       <img src="./assets/arrow.png" 
-       alt="Arrow icon" 
-       class="icon arrow" 
-       onclick="location.href='./#projects'"
-       />
-      </section>
-      <section id="projects">
-      <P class="section__text__p1">Browse My</P>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <iframe width="350" height="315" src="https://www.youtube.com/embed/b3RAuWG57b8?si=HyPp1ysm_fAkFtiM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-             </div>
-            <h2 class="experience-sub-title project-title">Whisper Woods</h2>
-            <div class="text-container">
-              <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://khazad-games.itch.io/whisperwoods'">
-                  Itch.io
-                </button>
-                
-              </div>
-              <br>
+            </div>
+            <br>
             <ul class="snake-content">
               </li>
               <br>
               <strong>Role:</strong> Programmer (School Project)
-                <br>
-                <strong>Tools:</strong> Unity, SOLID Principles, Game Design Patterns
-        </ul>
-         </div>
-      </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <iframe width="350" height="315" src="https://www.youtube.com/embed/b4UFOR65ZKs?si=CRaN_o6CKW1gBEFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-             </div>
-            <h2 class="experience-sub-title project-title">Empire Conquest</h2>
-            <div class="text-container">
-              <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://khazad-games.itch.io/empire-conquest'">
-                  Itch.io
-                </button>
-                
-              </div>
               <br>
+              <strong>Tools:</strong> Unity, SOLID Principles, Game Design Patterns
+            </ul>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <iframe width="320" height="250" src="https://www.youtube.com/embed/zbtWGlMEo0U?si=1kEO2WKhBJq7_Pj2"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+
+            <iframe width="320" height="250" src="https://www.youtube.com/embed/c6754OrNyRY?si=1DqVRAGdNsdXMVyy"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+
+          <h2 class="experience-sub-title project-title">Sins: Unveiled</h2>
+
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='OYUNUN_LINKI_BURAYA'">
+              Itch.io
+            </button>
+          </div>
+
+          <div class="text-container">
+            <br>
             <ul class="snake-content">
-              
+              <li>Top Down Shooter</li>
+              <br>
+              <strong>Role:</strong> Game Designer, Game Developer
+              <br>
+              <strong>Tools:</strong> Unity, SOLID Principles
+            </ul>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <iframe width="320" height="250" src="https://www.youtube.com/embed/g_NHncLpR8Q?si=rOO9d-obsI0E_a4N"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+
+            <iframe width="320" height="250" src="https://www.youtube.com/embed/Ii0GTJOj5gQ?si=BC_HyDlDnqZ1J8E_"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+
+          <h2 class="experience-sub-title project-title">Senzora</h2>
+
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='OYUNUN_LINKI_BURAYA'">
+              Steam(Coming Soon)
+            </button>
+          </div>
+
+          <div class="text-container">
+            <br>
+            <ul class="snake-content">
+              <li>Horror puzzle game</li>
+              <br>
+              <strong>Role:</strong> Game Designer, Game Developer
+              <br>
+              <strong>Tools:</strong> Unity, SOLID Principles
+            </ul>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <iframe width="350" height="315" src="https://www.youtube.com/embed/b4UFOR65ZKs?si=CRaN_o6CKW1gBEFg"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+          <h2 class="experience-sub-title project-title">Empire Conquest</h2>
+          <div class="text-container">
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://khazad-games.itch.io/empire-conquest'">
+                Itch.io
+              </button>
+
+            </div>
+            <br>
+            <ul class="snake-content">
+
               </li>
               <br>
               <strong>Role:</strong> Programmer (GameJam Porject)
-                <br>
-                <strong>Tools:</strong> Unity, SOLID Principles, Game Design Patterns
-        </ul>
-         </div>
-      </div>
-       <div class="details-container color-container">
-        <div class="article-container">
-          <iframe width="350" height="315" src="https://www.youtube.com/embed/JtHqX_w837M?si=Vxxgrjx5UdBF-_qm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         </div>
-          <h2 class="experience-sub-title project-title">Astrocian</h2>
-          <div class="text-container"> 
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://khazad-games.itch.io/astrocian'">
-              Itch.io
-            </button>
-            
+              <br>
+              <strong>Tools:</strong> Unity, SOLID Principles, Game Design Patterns
+            </ul>
           </div>
-          <br>
-          <ul class="snake-content">
-</li>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <iframe width="350" height="315" src="https://www.youtube.com/embed/JtHqX_w837M?si=Vxxgrjx5UdBF-_qm"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+          <h2 class="experience-sub-title project-title">Astrocian</h2>
+          <div class="text-container">
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://khazad-games.itch.io/astrocian'">
+                Itch.io
+              </button>
+
+            </div>
             <br>
-            <strong>Role:</strong> Programmer (Individual Project)
-            <br>
-            <strong>Tools:</strong> Unity, SOLID Principles, Game Design Patterns
-        </ul>
+            <ul class="snake-content">
+              </li>
+              <br>
+              <strong>Role:</strong> Programmer (Individual Project)
+              <br>
+              <strong>Tools:</strong> Unity, SOLID Principles, Game Design Patterns
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-      </div>
-      
-      <!--<img src="./assets/arrow.png" 
+
+    <!--<img src="./assets/arrow.png" 
       alt="Arrow icon" 
       class="icon arrow" 
       onclick="location.href='./#projects'"
       />-->
-    </section>
-    <section id="projects1">
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-      <div class="article-container">
-          <iframe width="350" height="315" src="https://www.youtube.com/embed/uXlu7fE7Pt8?si=d7cHkFwXA2mzPddP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         </div>
-            <h2 class="experience-sub-title project-title">Hire Room</h2>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://rami-deniz.itch.io/hire-room'">
-                Itch.io
-              </button>
-            </div>
-            <div class="text-container">
-            </br> 
+  </section>
+  <section id="projects1">
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <iframe width="350" height="315" src="https://www.youtube.com/embed/uXlu7fE7Pt8?si=d7cHkFwXA2mzPddP"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+          <h2 class="experience-sub-title project-title">Hire Room</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://rami-deniz.itch.io/hire-room'">
+              Itch.io
+            </button>
+          </div>
+          <div class="text-container">
+            </br>
             <ul class="snake-content">
               <li>Job Apply System: A prototype developed for companies to test candidates</li>
               <li>Physics-based gameplay with realistic motion for an immersive experience.</li>
@@ -340,40 +389,45 @@
               <strong>Role:</strong> Programmer (Team Project)
               <br>
               <strong>Tools:</strong> Unity, SOLID Principles, Game Design Patterns
-          </ul>
+            </ul>
           </div>
-          </div>
-      <div class="details-container color-container">
-        <div class="article-container1">
-           <iframe width="250" height="315" src="https://www.youtube.com/embed/eZnWGif7lJs?si=IpK1Q6PQ0iJwRsAI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
+        <div class="details-container color-container">
+          <div class="article-container1">
+            <iframe width="250" height="315" src="https://www.youtube.com/embed/eZnWGif7lJs?si=IpK1Q6PQ0iJwRsAI"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
           <h2 class="experience-sub-title project-title1">Arch Rivals</h2>
-          <div class="text-container"> 
+          <div class="text-container">
             <div class="btn-container">
-              <button class="btn btn-color-2 project-btn1" onclick="location.href='https://emacid.itch.io/arch-rivals-pixel-game'">
+              <button class="btn btn-color-2 project-btn1"
+                onclick="location.href='https://emacid.itch.io/arch-rivals-pixel-game'">
                 Itch.io
-              </button>   
+              </button>
             </div>
-          <ul class="snake-content">
-            <br>
-            <strong>Role:</strong> Programmer (Individual Project)
-            <br>
-            <strong>Tools:</strong> Unity, SOLID Principles, Game Design Patterns
-           
-        </ul>
-         </div>
-      </div>
-      
-       <div class="details-container color-container">
-<!--          <div class="article-container">-->
-<!--            <iframe width="350" height="315" src="https://www.youtube.com/embed/?" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
-<!--          </div>-->
+            <ul class="snake-content">
+              <br>
+              <strong>Role:</strong> Programmer (Individual Project)
+              <br>
+              <strong>Tools:</strong> Unity, SOLID Principles, Game Design Patterns
+
+            </ul>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <!--          <div class="article-container">-->
+          <!--            <iframe width="350" height="315" src="https://www.youtube.com/embed/?" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
+          <!--          </div>-->
           <h2 class="experience-sub-title project-title">Gear Factory</h2>
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://khazad-games.itch.io/gear-factory'">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://khazad-games.itch.io/gear-factory'">
               Itch.io
             </button>
-            
+
           </div>
           <br>
           <ul class="snake-content">
@@ -381,126 +435,94 @@
             <strong>Role:</strong> Programmer (Individual Project)
             <br>
             <strong>Tools:</strong> Unity, SOLID Principles, Game Design Patterns
-        </ul>
+          </ul>
         </div>
       </div>
-          
-      <div class="experience-details-container">
-          <div class="about-containers">
-              <div class="details-container color-container">
-                  <!--            <div class="article-container">-->
-                  <!--              <iframe width="350" height="315" src="https://www.youtube.com/embed/iYBXeHw7XIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
-                  <!--            </div>-->
-                  <h2 class="experience-sub-title project-title">Project Will be Added Soon</h2>
-                  <div class="btn-container">
-                      <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/duzz41'">
-                          Github
-                      </button>
-                  </div>
-                  <div class="text-container">
-                      </br>
-                      <ul class="snake-content">
-                          <li>*</li>
-                          <li>*</li>
-                          <li>*</li>
-                          <li>*</li>
-                          <br>
-                          <strong>Role:</strong> Programmer (Team Project)
-                          <br>
-                          <strong>Tools:</strong> Unity, SOLID Principles, Game Design Patterns
-                      </ul>
-                  </div>
-              </div>
-              <div class="details-container color-container">
-                  <!--          <div class="article-container1">-->
-                  <!--            <iframe width="350" height="315" src="https://www.youtube.com/embed/?" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
-                  <!--          </div>-->
-                  <h2 class="experience-sub-title project-title1">Project Will be Added Soon</h2>
-                  <div class="text-container">
-                      <div class="btn-container">
-                          <button class="btn btn-color-2 project-btn1" onclick="location.href='https://github.com/duzz41'">
-                              Github
-                          </button>
-                      </div>
-                      <ul class="snake-content">
-                          <li>*</li>
-                          <li>*</li>
-                          <li>*</li>
-                          <li>*</li>
-                          <li>*</li>
-                          <li>*</li>
-                          <br>
-                          <strong>Role:</strong> Programmer (Individual Project)
-                          <br>
-                          <strong>Tools:</strong> Unity, SOLID Principles, Game Design Patterns
 
-                      </ul>
-                  </div>
-              </div>
 
-              <div class="details-container color-container">
-                  <!--          <div class="article-container">-->
-                  <!--            <iframe width="350" height="315" src="https://www.youtube.com/embed/?" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
-                  <!--          </div>-->
-                  <h2 class="experience-sub-title project-title">Project Will be Added Soon</h2>
-                  <div class="btn-container">
-                      <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/duzz41'">
-                          Github
-                      </button>
-
-                  </div>
-                  <br>
-                  <ul class="snake-content">
-                      <li>*</li>
-                      <li>*</li>
-                      <li>*</li>
-                      <br>
-                      <strong>Role:</strong> Programmer (Individual Project)
-                      <br>
-                      <strong>Tools:</strong> Unity, SOLID Principles, Game Design Patterns
-                  </ul>
-              </div>
+      <div class="details-container color-container">
+        <!--          <div class="article-container1">-->
+        <!--            <iframe width="350" height="315" src="https://www.youtube.com/embed/?" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
+        <!--          </div>-->
+        <h2 class="experience-sub-title project-title1">Project Will be Added Soon</h2>
+        <div class="text-container">
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn1" onclick="location.href='https://github.com/duzz41'">
+              Github
+            </button>
           </div>
+          <ul class="snake-content">
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <br>
+            <strong>Role:</strong> Programmer (Individual Project)
+            <br>
+            <strong>Tools:</strong> Unity, SOLID Principles, Game Design Patterns
 
+          </ul>
+        </div>
+      </div>
+
+      <div class="details-container color-container">
+        <!--          <div class="article-container">-->
+        <!--            <iframe width="350" height="315" src="https://www.youtube.com/embed/?" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
+        <!--          </div>-->
+        <h2 class="experience-sub-title project-title">Project Will be Added Soon</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/duzz41'">
+            Github
+          </button>
+
+        </div>
+        <br>
+        <ul class="snake-content">
+          <li>*</li>
+          <li>*</li>
+          <li>*</li>
+          <br>
+          <strong>Role:</strong> Programmer (Individual Project)
+          <br>
+          <strong>Tools:</strong> Unity, SOLID Principles, Game Design Patterns
+        </ul>
+      </div>
+    </div>
+
+
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+
+  </section>
+
+
+  </div>
+
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon" />
+        <p><a href="mailto:osmansisman433@gmail.com">osmansisman433@gmail.com</a></p>
 
       </div>
-      <img src="./assets/arrow.png" 
-      alt="Arrow icon" 
-      class="icon arrow" 
-      onclick="location.href='./#contact'"
-      />
-      
-    </section>
-    
-        
-          </div>
-          
-           <img src="./assets/arrow.png" 
-        alt="Arrow icon" 
-        class="icon arrow" 
-        onclick="location.href='#contact'" 
-        />
-        </section>
-        <section id="contact">
-             <p class="section__text__p1">Get in Touch</p>
-             <h1 class="title">Contact Me</h1>
-             <div class="contact-info-upper-container">
-              <div class="contact-info-container">
-               <img src="./assets/email.png" alt="Email icon" class="icon contact-icon"/>
-               <p><a href="mailto:osmansisman433@gmail.com">osmansisman433@gmail.com</a></p>
-               
-             </div>
-             
-              <div class="contact-info-container">
-               <img src="./assets/linkedin.png" alt="Linkedln icon" class="icon contact-icon"/>
-               <p><a href="https://www.linkedin.com/in/osman-sisman/">Linkedln</a></p>
 
-             </div>
-             </div>
-        </section>
-         <footer>
-           
-         </footer>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="Linkedln icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/osman-sisman/">Linkedln</a></p>
+
+      </div>
+    </div>
+  </section>
+  <footer>
+
+  </footer>
   <script src="script.js"></script> <!--Link script.js-->
 </body>
+
 </html>
