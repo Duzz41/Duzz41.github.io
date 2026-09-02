@@ -489,21 +489,7 @@ article .icon {
 
 /* PROJECTS SECTION */
 
-#projects {
-   position: relative;
-   height: 1250px;
-}
 
-#projects1 {
-   position: relative;
-   height: 960px;
-}
-
-#projects2 {
-   position: relative;
-   height: 960px;
-   width: 300px;
-}
 
 .color-container {
    border-color: rgb(163, 163, 163);
