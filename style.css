@@ -1132,4 +1132,16 @@ body.dark-mode {
          height: auto !important;
       }
    }
+   .projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.projects-grid .details-container {
+    flex: 0 0 calc(33.333% - 2rem);
+    min-width: 300px;
+    box-sizing: border-box;
+}
 }
